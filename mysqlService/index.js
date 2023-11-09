@@ -18,6 +18,7 @@ const emailCheckQuery = 'SELECT admin_id FROM admin WHERE email = ?';
 let dbPool;
 class mysqlService {
     async init(success) {
+        /*
         dbPool = mysql.createPool({
             host: "localhost",
             user: "root",
@@ -25,9 +26,17 @@ class mysqlService {
             password: "root",
             database: "nakade_krungthepchemi",
         });
-        let email = "pnyfiat@gmail.com"
-        const emailCheckQuery = 'SELECT user_id FROM users WHERE email = ?';
-        const [emailCheckResults] = await dbPool.promise().query(emailCheckQuery, [email]);
+        */
+        dbPool = mysql.createPool({
+            host: "localhost",
+            user: "root",
+            port: 3306,
+            password: "1234",
+            database: "mydb",
+        });
+        //let email = "pnyfiat@gmail.com"
+        //const emailCheckQuery = 'SELECT user_id FROM users WHERE email = ?';
+        //const [emailCheckResults] = await dbPool.promise().query(emailCheckQuery, [email]);
         success(true);
     }
     getDB() {

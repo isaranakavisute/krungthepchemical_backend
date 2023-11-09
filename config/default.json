@@ -1,6 +1,6 @@
 {
   "DB_HOST": "localhost",
   "DB_USER": "root",
-  "DB_PASSWORD": "root",
-  "DB_DATABASE": "nakade_krungthepchemi"
+  "DB_PASSWORD": "1234",
+  "DB_DATABASE": "mydb"
 }
